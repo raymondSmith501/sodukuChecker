@@ -16,12 +16,12 @@ namespace RaymondSmith_Program5
 
                 char[] delim = { ',' };
 
-                for (int row = 0; row < 9; row++)          
+                for (int row = 0; row < Program.SODUKU_SIZE; row++)          
                 {          
                         string line = reader.ReadLine();
                         string[] fields = line.Split(delim);
 
-                        for (int i = 0; i < fields.Length; i++)
+                        for (int i = 0; i < Program.SODUKU_SIZE; i++)
                         {
                             array[row, i] = int.Parse(fields[i]);
                         }                    
